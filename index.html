@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swan's Island Inventory</title>
+<meta name="theme-color" content="#2f5233">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="app-header">
+  <button id="back-btn" class="icon-btn" aria-label="Back" hidden>&#8592;</button>
+  <h1 id="header-title">Swan's Island Inventory</h1>
+  <button id="menu-btn" class="icon-btn" aria-label="Menu">&#8942;</button>
+</header>
+
+<div id="menu-panel" class="panel hidden">
+  <button data-action="shopping-list">Shopping / Need list</button>
+  <button data-action="switch-inventory">Switch inventory</button>
+  <button data-action="new-inventory">Start a new inventory</button>
+  <button data-action="add-space">Add a space</button>
+  <button data-action="export">Export full inventory (text)</button>
+  <button data-action="close-menu">Close</button>
+</div>
+
+<main id="app-root">
+  <!-- rendered by app.js -->
+</main>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="data-seed.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
